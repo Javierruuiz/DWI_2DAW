@@ -1,0 +1,475 @@
+
+:root {
+    --primary-color: #004080;
+    --secondary-color: #00bfff;
+    --background-color: #f0f8ff;
+    --text-color: #1a1a1a;
+    --light-background: #e6f7ff;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --font-family: Arial, sans-serif;
+}
+body {
+        font-family: var(--font-family);
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color); /* Color de fondo de la página */
+        color: var(--text-color); /* Color del texto principal */
+    }
+
+/* Estilo base para los enlaces */
+a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: inherit; /* Adopta el color actual del texto */
+}
+
+/* Contenedor general */
+.container {
+    width: 85%; /* Ancho del contenedor relativo al tamaño de la pantalla */
+    max-width: 75rem; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 1.25rem; /* Espaciado interno */
+}
+
+
+/* =============================== HEADER =============================== */
+.header {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); /* Fondo degradado en diagonal */
+    color: #fff; /* Color del texto */
+    padding: 2.5rem 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Centra el contenido */
+}
+
+.header h1 {
+    font-size: 2.5rem; /* Tamaño de la fuente del título */
+    margin: 0.625rem 0; /* Margen superior e inferior */
+}
+
+.header h1 span {
+    color: var(--secondary-color); /* Color especial para resaltar */
+}
+
+.header p {
+    font-size: 1.2rem; /* Tamaño de la fuente del párrafo */
+    margin: 1.25rem 0; /* Margen superior e inferior */
+}
+
+.header .btn {
+    background-color: var(--secondary-color); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 0.625rem 1.25rem; /* Espaciado interno del botón */
+    border-radius: 0.3125rem; /* Bordes redondeados */
+    font-weight: bold; /* Fuente en negrita */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.header .btn:hover {
+    background-color: #0078b8; /* Color de fondo al pasar el cursor */
+}
+
+
+/* ============================ FINAL DEL HEADER ============================ */
+
+/* =============================== NAVBAR =============================== */
+.navbar {
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0.9375rem 1.25rem; /* Espaciado interno */
+    background-color: var(--primary-color); /* Color de fondo de la barra de navegación */
+}
+
+.navbar .logo {
+    font-size: 3.5rem; /* Tamaño de la fuente del logo */
+    color: var(--secondary-color); /* Color del logo */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.navbar .menu {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Flexbox para alinear los enlaces */
+    gap: 1.25rem; /* Espaciado entre enlaces */
+}
+
+.navbar .menu li {
+    display: inline; /* Alinea los elementos en línea */
+    font-size: 1.5rem; /* Tamaño */
+}
+
+.navbar .menu li a {
+    color: #fff; /* Color del texto de los enlaces */
+    font-weight: bold; /* Fuente en negrita */
+    transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.navbar .menu li a:hover {
+    color: var(--secondary-color); /* Color del texto al pasar el cursor */
+}
+
+.navbar .hire-btn {
+    background-color: var(--secondary-color); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 0.5rem 0.9375rem; /* Espaciado interno */
+    border-radius: 0.3125rem; /* Bordes redondeados */
+    font-weight: bold; /* Fuente en negrita */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+    font-size: 1.5rem; /* Tamaño */
+}
+
+.navbar .hire-btn:hover {
+    background-color: #0078b8; /* Color de fondo al pasar el cursor */
+}
+
+
+/* ============================ FINAL DE NAVBAR ============================ */
+
+/* =============================== ABOUT =============================== */
+
+.about {
+    background-color: var(--light-background); /* Fondo claro */
+    padding: 3.125rem 0; /* Espaciado superior e inferior */
+}
+
+.about .container {
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.about-title {
+    text-align: center; /* Centra el título */
+    color: var(--primary-color); /* Color del título */
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 1.875rem; /* Espaciado debajo del título */
+}
+
+.about-content {
+    display: flex; /* Usamos flexbox para colocar la imagen y el texto */
+    align-items: center; /* Alineación vertical */
+    justify-content: center; /* Centrado horizontal */
+    gap: 6.25rem; /* Aumenta el espacio entre la imagen y el texto */
+    padding: 0 1.25rem; /* Espaciado a los lados */
+}
+
+.about-content img {
+    width: 25rem; /* Aumenta el tamaño de la imagen */
+    height: 25rem; /* Aumenta la altura de la imagen */
+    border-radius: 50%; /* Bordes redondeados de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que cubra sin deformarse */
+}
+
+.about-content .text {
+    max-width: 40.625rem; /* Limita el ancho del contenido de texto */
+    margin-left: 1.875rem; /* Mueve el texto más hacia la derecha */
+}
+
+.about-content .text h3 {
+    color: var(--primary-color); /* Color del subtítulo */
+    font-size: 2.5rem; /* Tamaño del subtítulo */
+    margin-bottom: 3.125rem; /* Espaciado debajo del subtítulo */
+}
+
+.about-content .text p {
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: var(--text-color); /* Color del texto */
+    margin-bottom: 0.9375rem; /* Espaciado debajo del párrafo */
+}
+
+.about-content .text .btn {
+    background-color: var(--secondary-color); /* Color del botón */
+    color: white; /* Color del texto en el botón */
+    padding: 0.625rem 1.25rem; /* Espaciado dentro del botón */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 0.3125rem; /* Bordes redondeados del botón */
+}
+
+.about-content .text .btn:hover {
+    background-color: #0078b8; /* Color del botón al pasar el cursor */
+}
+
+
+/* ============================ FINAL DE ABOUT ============================ */
+
+/* =============================== SERVICES =============================== */
+.services {
+    background-color: var(--primary-color); /* Color de fondo */
+    padding: 3.125rem 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Centra el contenido */
+}
+
+.services h2 {
+    font-size: 2rem; /* Tamaño de la fuente del título */
+    color: var(--secondary-color); /* Color del texto */
+    margin-bottom: 1.875rem; /* Margen inferior */
+}
+
+.service-cards {
+    display: flex; /* Flexbox para disposición */
+    gap: 1.25rem; /* Espaciado entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten al ancho */
+}
+
+.service-card {
+    background-color: #ffffff; /* Fondo de la tarjeta */
+    border: 0.125rem solid var(--primary-color); /* Borde de la tarjeta */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    padding: 1.25rem; /* Espaciado interno */
+    width: 15.625rem; /* Ancho fijo de cada tarjeta */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave de transición */
+}
+
+.service-card:hover {
+    transform: translateY(-0.625rem); /* Eleva la tarjeta al pasar el cursor */
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+}
+
+.service-card h3 {
+    color: var(--primary-color); /* Color del título de la tarjeta */
+    margin-bottom: 0.9375rem; /* Margen inferior */
+    font-size: 1.5rem; /* Aumenta el tamaño del h3 */
+}
+
+.service-card p {
+    color: var(--text-color); /* Color del texto descriptivo */
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+}
+
+.service-card i {
+    font-size: 4.5rem; /* Aumenta el tamaño de los iconos */
+    margin-bottom: 0.9375rem; /* Ajusta el espacio entre el icono y el título */
+    color: var(--primary-color); /* Color del título de los iconos */
+}
+
+
+
+/* ============================ FINAL DE SERVICES ============================ */
+
+/* =============================== SKILLS =============================== */
+.skills {
+    background-color: var(--light-background); /* Color de fondo */
+    padding: 3.125rem 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Centra el contenido */
+}
+
+.skills h2 {
+    font-size: 2rem; /* Tamaño de la fuente del título */
+    color: var(--primary-color); /* Color del texto */
+    margin-bottom: 1.875rem; /* Margen inferior */
+}
+
+.skill_bars {
+    margin-top: 1.25rem; /* Margen superior */
+    width: 70%; /* Ancho relativo al contenedor */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+
+.skill_bars p {
+    font-weight: bold; /* Fuente en negrita */
+    color: var(--primary-color); /* Color del texto */
+    margin-bottom: 0.3125rem; /* Margen inferior */
+}
+
+.progress {
+    height: 0.625rem; /* Altura de la barra de progreso */
+    background-color: var(--light-background); /* Color de fondo de la barra */
+    border-radius: 0.3125rem; /* Bordes redondeados */
+    margin-bottom: 1.25rem; /* Margen inferior */
+    position: relative; /* Posicionamiento relativo para contenido interno */
+}
+
+.progress::before {
+    content: ''; /* Elemento vacío para representar el progreso */
+    display: block; /* Muestra el bloque */
+    height: 100%; /* Altura igual a la barra */
+    background-color: var(--secondary-color); /* Color del progreso */
+    width: var(--wth, 0); /* Ancho dinámico controlado por la variable */
+    border-radius: 0.3125rem; /* Bordes redondeados */
+    transition: width 0.5s ease; /* Transición suave del ancho */
+}
+
+
+/* ============================ FINAL DE SKILLS ============================ */
+
+/* ============================== PORTFOLIO ============================== */
+.portfolio {
+    background-color: var(--primary-color); /* Color de fondo */
+    padding: 3.125rem 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Centra el contenido */
+}
+
+.portfolio h2 {
+    font-size: 2rem; /* Tamaño de la fuente del título */
+    color: var(--secondary-color); /* Color del texto */
+    margin-bottom: 1.875rem; /* Margen inferior */
+}
+
+.portfolio-gallery {
+    display: flex; /* Flexbox para disposición */
+    gap: 1.25rem; /* Espaciado entre imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten al ancho */
+}
+
+.portfolio-gallery img {
+    width: 100%; /* Ancho relativo al contenedor */
+    max-width: 12.5rem; /* Ancho máximo de las imágenes */
+    aspect-ratio: 4 / 3; /* Proporción de las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 0.1875rem solid var(--primary-color); /* Borde alrededor de las imágenes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición suave */
+}
+
+.portfolio-gallery img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
+
+/* ============================ FINAL DE PORTFOLIO ============================ */
+
+/* =============================== CONTACT =============================== */
+.contact {
+    background-color: var(--light-background); /* Color de fondo */
+    padding: 3.125rem 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Centra el contenido */
+}
+
+.contact h2 {
+    font-size: 2rem; /* Tamaño de la fuente del título */
+    color: var(--primary-color); /* Color del texto */
+    margin-bottom: 1.875rem; /* Margen inferior */
+}
+
+.contact form {
+    display: flex; /* Flexbox para disposición */
+    flex-direction: column; /* Alinea los elementos en columna */
+    gap: 0.9375rem; /* Espaciado entre los elementos del formulario */
+    width: 70%; /* Ancho relativo al contenedor */
+    margin: 0 auto; /* Centra el formulario */
+}
+
+.contact input, .contact textarea {
+    padding: 0.625rem; /* Espaciado interno */
+    border: 0.125rem solid var(--primary-color); /* Borde de los campos */
+    border-radius: 0.3125rem; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de la fuente */
+}
+
+.contact button {
+    background-color: var(--secondary-color); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 0.625rem 0.9375rem; /* Espaciado interno */
+    border-radius: 0.3125rem; /* Bordes redondeados */
+    font-weight: bold; /* Fuente en negrita */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.contact button:hover {
+    background-color: var(--primary-color); /* Color de fondo al pasar el cursor */
+}
+
+
+/* ============================ FINAL DE CONTACT ============================ */
+
+/* =============================== FOOTER =============================== */
+footer {
+    background-color: var(--primary-color); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centra el contenido */
+    padding: 0.9375rem 0; /* Espaciado interno superior e inferior */
+}
+
+
+/* ============================ FINAL DE FOOTER ============================ */
+
+/* ====================== MEDIA QUERY - MENOR A 600PX ====================== */
+@media (max-width: 600px) {
+    /* ----------- Ajustes para navbar ----------- */
+    .navbar {
+        flex-direction: column; /* Cambia la disposición a una columna */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+    .navbar .logo {
+        margin-bottom: 0.625rem; /* Espaciado debajo del logo */
+        width: 100%; /* Asegura que el logo ocupe todo el ancho */
+        text-align: center; /* Centra el logo */
+    }
+    .navbar .hire-btn {
+        padding: 0.75rem 1rem; /* Ajusta el espaciado interno para que sea cómodo */
+        margin: 0.9375rem auto; /* Centra el botón horizontalmente con espacio superior/inferior */
+        text-align: center; /* Centra el texto */
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+        width: 90%; /* Botón casi del ancho total, con márgenes laterales */
+    }
+    .navbar .menu {
+        padding: 4%; /* Espaciado interno del menú */
+        flex-direction: column; /* Organiza el menú en una columna */
+        gap: 1.25rem; /* Espaciado entre los enlaces */
+        width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    }
+
+    /* ----------- Ajustes para la sección "about" ----------- */
+    .about-content {
+        flex-direction: column; /* Cambia la disposición a una columna */
+        align-items: center; /* Centra el contenido */
+    }
+    .about-content p {
+        align-items: center; /* Centra el contenido */
+    }
+    .about-content img {
+        width: 18.75rem; /* Reduce el ancho de la imagen */
+        height: 18.75rem; /* Reduce la altura de la imagen */
+    }
+
+    /* ----------- Ajustes para la sección "services" ----------- */
+    .services .service-cards {
+        flex-direction: column; /* Cambia la disposición a una columna */
+        gap: 1.25rem; /* Espaciado entre las tarjetas */
+    }
+
+    /* ----------- Ajustes para la sección "portfolio" ----------- */
+    .portfolio-gallery img {
+        max-width: 9.375rem; /* Reduce el ancho máximo de las imágenes */
+    }
+
+    /* ----------- Ajustes para la sección "contact" ----------- */
+    .contact form {
+        width: 100%; /* El formulario ocupa todo el ancho disponible */
+    }
+}
+
+/* ====================== FINAL MEDIA QUERY - MENOR A 600PX ====================== */
+
+/* ================== MEDIA QUERY - ENTRE 601PX Y 1024PX ================== */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* ----------- Ajustes para navbar ----------- */
+    .navbar .menu {
+        gap: 0.9375rem; /* Reduce el espaciado entre enlaces */
+    }
+
+    /* ----------- Ajustes para la sección "about" ----------- */
+    .about-content img {
+        width: 25rem; /* Reduce el ancho de la imagen */
+        height: 25rem; /* Reduce la altura de la imagen */
+    }
+
+    /* ----------- Ajustes para la sección "services" ----------- */
+    .services .service-cards {
+        flex-wrap: wrap; /* Permite que las tarjetas se ajusten al ancho */
+        justify-content: space-between; /* Espaciado uniforme entre las tarjetas */
+    }
+
+    /* ----------- Ajustes para la sección "portfolio" ----------- */
+    .portfolio-gallery img {
+        max-width: 11.25rem; /* Ajusta el ancho máximo de las imágenes */
+    }
+
+    /* ----------- Ajustes para la sección "skills" ----------- */
+    .skill_bars {
+        width: 90%; /* Incrementa el ancho relativo al contenedor */
+    }
+}
+
+/* ================== FINAL MEDIA QUERY - ENTRE 601PX Y 1024PX ================== */
